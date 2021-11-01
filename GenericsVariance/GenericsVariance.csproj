@@ -47,6 +47,7 @@
     <Compile Include="Animals\Bird.cs" />
     <Compile Include="Animals\Cat.cs" />
     <Compile Include="Collections\Collection.cs" />
+    <Compile Include="Collections\ICollection.cs" />
     <Compile Include="Collections\ICollectionGet.cs" />
     <Compile Include="Collections\ICollectionSet.cs" />
     <Compile Include="Program.cs" />

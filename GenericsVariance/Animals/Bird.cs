@@ -8,7 +8,7 @@ namespace GenericsVariance.Animals
         {
         }
 
-        public void FlapWings()
+        public override void Action()
         {
             Console.WriteLine("*Bird flaps wings...");
         }

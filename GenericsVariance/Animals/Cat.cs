@@ -8,7 +8,7 @@ namespace GenericsVariance.Animals
         {
         }
 
-        public void Purr()
+        public override void Action()
         {
             Console.WriteLine("*Cat purrs...");
         }

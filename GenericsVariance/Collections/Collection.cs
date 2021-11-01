@@ -2,7 +2,7 @@
 
 namespace GenericsVariance.Collections
 {
-    public class Collection<T> : ICollectionGet<T>, ICollectionSet<T>
+    public class Collection<T> : ICollectionGet<T>, ICollectionSet<T> // ICollection<T>
     {
         private List<T> _collection;
 

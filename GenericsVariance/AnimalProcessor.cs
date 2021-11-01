@@ -15,12 +15,12 @@ namespace GenericsVariance
             }
         }
 
-        public void ProcessBirds(ICollectionGet<Bird> birds)
+        public void ProcessBirds(ICollectionGet<Animal> birds)
         {
             for (int index = 0; index < birds.Count; index++)
             {
                 Console.WriteLine(birds.Get(index).Sound());
-                birds.Get(index).FlapWings(); // Why does this work..?
+                birds.Get(index).Action(); // Why does this work..?
             }
         }
 
@@ -29,11 +29,11 @@ namespace GenericsVariance
             for (int index = 0; index < 5; index++)
             {
                 Bird b = new Bird("Tweety");
-                b.FlapWings();
+                b.Action();
                 animals.Set(b); // Why does this work..?
 
-                Cat c = new Cat("Spot");
-                c.Purr();
+                                Cat c = new Cat("Spot");
+                c.Action();
                 animals.Set(c); // Why does this work..?
             }
         }
@@ -43,11 +43,11 @@ namespace GenericsVariance
             for (int index = 0; index < 5; index++)
             {
                 Bird b = new Bird("Tweety");
-                b.FlapWings();
+                b.Action();
                 birds.Set(b);
 
                 Cat c = new Cat("Spot");
-                c.Purr();
+                c.Action();
                 // birds.SetAnimal(c); // Why does this NOT work...?
             }
         }
