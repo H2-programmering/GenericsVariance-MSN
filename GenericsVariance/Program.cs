@@ -53,7 +53,7 @@ namespace GenericsVariance
             
             Console.WriteLine("Inserting animals...");
 
-            //processor.InsertAnimals(birdsSet);    // Case E
+            //processor.InsertAnimals(birdsSet);    // Case E <-- Can't make this work!
             processor.InsertAnimals(animalsSet);  // Case F
 
             processor.InsertBirds(birdsSet);      // Case G
